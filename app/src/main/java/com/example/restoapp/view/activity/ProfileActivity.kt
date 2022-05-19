@@ -25,6 +25,7 @@ class ProfileActivity : AppCompatActivity() {
 
     private fun logout() {
         userLoginManager = UserLoginManager(this)
+
         AlertDialog.Builder(this)
             .setTitle("Logout")
             .setMessage("Apakah anda yakin ingin logout?")
