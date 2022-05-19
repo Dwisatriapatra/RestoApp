@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.DetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/detail_resto_menu_image"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAMA MAKAKAN : "
+            android:textColor="@color/black"
+            android:id="@+id/detail_nama_makanan"
+            android:layout_marginBottom="5dp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HARGA : "
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/detail_harga"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DESKRIPSI : "
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/detail_deskripsi"/>
+    </LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/detail_add_to_favorite"
+        android:src="@drawable/favorite_icon"/>
+
+</RelativeLayout>
